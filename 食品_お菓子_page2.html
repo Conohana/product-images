@@ -1,0 +1,313 @@
+
+          <!DOCTYPE html>
+          <html lang="ja">
+          <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>食品 > お菓子 商品一覧 (ページ 2/5)</title>
+              
+    <style>
+      body { font-family: 'メイリオ', Meiryo, sans-serif; margin: 0; padding: 20px; background-color: #f4f7f6; color: #333; }
+      .container { max-width: 1200px; margin: 0 auto; padding: 20px; background-color: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+      h1, h2 { text-align: center; color: #2c3e50; margin-bottom: 30px; }
+      h1 { font-size: 2.5em; border-bottom: 2px solid #e0e0e0; padding-bottom: 15px; }
+      h2 { font-size: 1.8em; color: #34495e; }
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 1列200px以上で自動調整 */
+        gap: 25px;
+        justify-content: center;
+        padding: 20px 0;
+      }
+      .product-item {
+        background-color: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        transition: transform 0.2s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between; /* コンテンツを均等に配置 */
+      }
+      .product-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      }
+      .product-image {
+        max-width: 100%;
+        height: 180px; /* 画像の高さを固定 */
+        object-fit: contain; /* アスペクト比を保ちつつ、指定された領域に収める */
+        border-radius: 6px;
+        margin-bottom: 10px;
+        background-color: #f0f0f0; /* ロード中の背景色 */
+      }
+      .product-details {
+        flex-grow: 1; /* 残りのスペースを埋める */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end; /* 下部に寄せる */
+        width: 100%;
+        padding-top: 10px;
+      }
+      .product-catalog-number {
+        font-size: 0.85em;
+        color: #7f8c8d;
+        margin-bottom: 5px;
+      }
+      .product-name {
+        font-size: 1.2em;
+        color: #2c3e50;
+        font-weight: bold;
+        margin-bottom: 10px;
+        line-height: 1.4;
+      }
+      .product-price {
+        font-size: 1.4em;
+        color: #e74c3c; /* 赤系の価格表示 */
+        font-weight: bold;
+        margin-top: auto; /* 価格を一番下に配置 */
+      }
+      .pagination {
+        text-align: center;
+        margin-top: 30px;
+      }
+      .pagination button {
+        background-color: #3498db;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        margin: 0 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+      }
+      .pagination button:hover:not(:disabled) {
+        background-color: #2980b9;
+      }
+      .pagination button:disabled {
+        background-color: #cccccc;
+        cursor: not-allowed;
+      }
+      .footer {
+        text-align: center;
+        margin-top: 50px;
+        padding-top: 20px;
+        border-top: 1px solid #e0e0e0;
+        color: #7f8c8d;
+        font-size: 0.9em;
+      }
+      .footer a {
+        color: #3498db;
+        text-decoration: none;
+      }
+      .footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  
+          </head>
+          <body>
+              <div class="container">
+                  <h1>食品</h1>
+                  <h2>お菓子</h2>
+                  <div class="product-grid">
+                      
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4903333258840.jpg" alt="ガーナ ミルクチョコレート" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.100</p>
+        <h3 class="product-name">ガーナ ミルクチョコレート</h3>
+        <p class="product-price">140円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4903333213559.jpg" alt="ガーナ ローストチョコレート" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.101</p>
+        <h3 class="product-name">ガーナ ローストチョコレート</h3>
+        <p class="product-price">140円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4901940113972.jpg" alt="キャラメルコーン 70g" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.110</p>
+        <h3 class="product-name">キャラメルコーン 70g</h3>
+        <p class="product-price">110円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4901940115587.jpg" alt="キャラメルコーン ほろ苦ティラミス味" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.111</p>
+        <h3 class="product-name">キャラメルコーン ほろ苦ティラミス味</h3>
+        <p class="product-price">110円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4901940115907.jpg" alt="キャラメルコーン グランデ 濃厚キャラメル味" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.112</p>
+        <h3 class="product-name">キャラメルコーン グランデ 濃厚キャラメル味</h3>
+        <p class="product-price">140円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4904691078057.jpg" alt="クラッシック クッキー 缶" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.118</p>
+        <h3 class="product-name">クラッシック クッキー 缶</h3>
+        <p class="product-price">200円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4903333253920.jpg" alt="コアラのマーチ" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.125</p>
+        <h3 class="product-name">コアラのマーチ</h3>
+        <p class="product-price">110円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4903333133062.jpg" alt="コアラのマーチ いちご" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.126</p>
+        <h3 class="product-name">コアラのマーチ いちご</h3>
+        <p class="product-price">110円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4902750670341.jpg" alt="コグミ フルーツ4種" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.130</p>
+        <h3 class="product-name">コグミ フルーツ4種</h3>
+        <p class="product-price">140円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4902750676152.jpg" alt="コグミ 炭酸4種MIX" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.131</p>
+        <h3 class="product-name">コグミ 炭酸4種MIX</h3>
+        <p class="product-price">140円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4901620300159.jpg" alt="ココナッツサブレ" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.132</p>
+        <h3 class="product-name">ココナッツサブレ</h3>
+        <p class="product-price">110円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4901620303945.jpg" alt="ココナッツサブレ あんバター" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.133</p>
+        <h3 class="product-name">ココナッツサブレ あんバター</h3>
+        <p class="product-price">110円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4901620300784.jpg" alt="ココナッツサブレ トリプルナッツ 16枚 D" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.134</p>
+        <h3 class="product-name">ココナッツサブレ トリプルナッツ 16枚 D</h3>
+        <p class="product-price">110円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4901620301019.jpg" alt="ココナッツサブレ ベイクドチーズ" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.135</p>
+        <h3 class="product-name">ココナッツサブレ ベイクドチーズ</h3>
+        <p class="product-price">110円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4901620300852.jpg" alt="ココナッツサブレ 発酵バター D" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.136</p>
+        <h3 class="product-name">ココナッツサブレ 発酵バター D</h3>
+        <p class="product-price">110円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4560160773542.jpg" alt="コーラグミ 5連袋" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.139</p>
+        <h3 class="product-name">コーラグミ 5連袋</h3>
+        <p class="product-price">150円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4901330123321.jpg" alt="サッポロポテト つぶつぶベジタブル 72g" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.146</p>
+        <h3 class="product-name">サッポロポテト つぶつぶベジタブル 72g</h3>
+        <p class="product-price">120円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4901940117451.jpg" alt="ショコラ キャラメルコーン 65g" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.152</p>
+        <h3 class="product-name">ショコラ キャラメルコーン 65g</h3>
+        <p class="product-price">110円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4901360357567.jpg" alt="ショコラセーヌ 14枚入" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.153</p>
+        <h3 class="product-name">ショコラセーヌ 14枚入</h3>
+        <p class="product-price">140円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4901005517455.jpg" alt="ジャイアント カプリコ いちご" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.157</p>
+        <h3 class="product-name">ジャイアント カプリコ いちご</h3>
+        <p class="product-price">120円</p>
+      </div>
+    </div>
+  
+                  </div>
+                  <div class="pagination"><button onclick="window.location.href='____1.html'">前へ</button><span>ページ 2 / 5</span><button onclick="window.location.href='____3.html'">次へ</button></div>
+                  
+          <div class="footer">
+            <p>ご注文は電話または公式LINEで承っております。</p>
+            <p>電話番号: 092-938-3263</p>
+            <p>公式LINE: <a href="https://line.me/R/ti/p/@582qjzyq" target="_blank">LINEトーク画面へ</a></p>
+            <p>店舗情報: 福岡県糟屋郡粕屋町甲仲原1丁目19-31</p>
+            <p><iframe src="https://maps.app.goo.gl/MpDFRGJSuArttVs26" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+            <p>&copy; 2025 ConohanaSHOP. All Rights Reserved.</p>
+          </div>
+        
+              </div>
+          </body>
+          </html>
+        

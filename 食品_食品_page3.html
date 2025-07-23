@@ -1,0 +1,313 @@
+
+          <!DOCTYPE html>
+          <html lang="ja">
+          <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>食品 > 食品 商品一覧 (ページ 3/4)</title>
+              
+    <style>
+      body { font-family: 'メイリオ', Meiryo, sans-serif; margin: 0; padding: 20px; background-color: #f4f7f6; color: #333; }
+      .container { max-width: 1200px; margin: 0 auto; padding: 20px; background-color: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+      h1, h2 { text-align: center; color: #2c3e50; margin-bottom: 30px; }
+      h1 { font-size: 2.5em; border-bottom: 2px solid #e0e0e0; padding-bottom: 15px; }
+      h2 { font-size: 1.8em; color: #34495e; }
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 1列200px以上で自動調整 */
+        gap: 25px;
+        justify-content: center;
+        padding: 20px 0;
+      }
+      .product-item {
+        background-color: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        transition: transform 0.2s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between; /* コンテンツを均等に配置 */
+      }
+      .product-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      }
+      .product-image {
+        max-width: 100%;
+        height: 180px; /* 画像の高さを固定 */
+        object-fit: contain; /* アスペクト比を保ちつつ、指定された領域に収める */
+        border-radius: 6px;
+        margin-bottom: 10px;
+        background-color: #f0f0f0; /* ロード中の背景色 */
+      }
+      .product-details {
+        flex-grow: 1; /* 残りのスペースを埋める */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end; /* 下部に寄せる */
+        width: 100%;
+        padding-top: 10px;
+      }
+      .product-catalog-number {
+        font-size: 0.85em;
+        color: #7f8c8d;
+        margin-bottom: 5px;
+      }
+      .product-name {
+        font-size: 1.2em;
+        color: #2c3e50;
+        font-weight: bold;
+        margin-bottom: 10px;
+        line-height: 1.4;
+      }
+      .product-price {
+        font-size: 1.4em;
+        color: #e74c3c; /* 赤系の価格表示 */
+        font-weight: bold;
+        margin-top: auto; /* 価格を一番下に配置 */
+      }
+      .pagination {
+        text-align: center;
+        margin-top: 30px;
+      }
+      .pagination button {
+        background-color: #3498db;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        margin: 0 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+      }
+      .pagination button:hover:not(:disabled) {
+        background-color: #2980b9;
+      }
+      .pagination button:disabled {
+        background-color: #cccccc;
+        cursor: not-allowed;
+      }
+      .footer {
+        text-align: center;
+        margin-top: 50px;
+        padding-top: 20px;
+        border-top: 1px solid #e0e0e0;
+        color: #7f8c8d;
+        font-size: 0.9em;
+      }
+      .footer a {
+        color: #3498db;
+        text-decoration: none;
+      }
+      .footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  
+          </head>
+          <body>
+              <div class="container">
+                  <h1>食品</h1>
+                  <h2>食品</h2>
+                  <div class="product-grid">
+                      
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4904016509082.jpg" alt="水出し 緑茶 ティーパック 50袋" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.293</p>
+        <h3 class="product-name">水出し 緑茶 ティーパック 50袋</h3>
+        <p class="product-price">300円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/2025040010022.jpg" alt="もったいないコーナー" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.309</p>
+        <h3 class="product-name">もったいないコーナー</h3>
+        <p class="product-price">価格指定円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4902431018608.jpg" alt="レトルトさんま 味付 80g パウチ" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.319</p>
+        <h3 class="product-name">レトルトさんま 味付 80g パウチ</h3>
+        <p class="product-price">250円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4902431018615.jpg" alt="レトルトさんま 梅じそ風味 80g パウチ" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.320</p>
+        <h3 class="product-name">レトルトさんま 梅じそ風味 80g パウチ</h3>
+        <p class="product-price">250円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4970842032223.jpg" alt="レトルト屋さんのビーフカレー 中辛" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.321</p>
+        <h3 class="product-name">レトルト屋さんのビーフカレー 中辛</h3>
+        <p class="product-price">130円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4934626724612.jpg" alt="下関 ふく雑炊スープ コラーゲン入り 2人前 SB" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.330</p>
+        <h3 class="product-name">下関 ふく雑炊スープ コラーゲン入り 2人前 SB</h3>
+        <p class="product-price">800円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4901726012413.jpg" alt="五木食品 ナポリタン 3食入" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.332</p>
+        <h3 class="product-name">五木食品 ナポリタン 3食入</h3>
+        <p class="product-price">220円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4560144560014.jpg" alt="伊勢ののり佃煮" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.333</p>
+        <h3 class="product-name">伊勢ののり佃煮</h3>
+        <p class="product-price">200円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4902105051306.jpg" alt="出前一丁 しょうゆ味 5食パック" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.334</p>
+        <h3 class="product-name">出前一丁 しょうゆ味 5食パック</h3>
+        <p class="product-price">430円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4902105284155.jpg" alt="利きどん兵衛 北 きつねうどん" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.335</p>
+        <h3 class="product-name">利きどん兵衛 北 きつねうどん</h3>
+        <p class="product-price">160円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4902105284148.jpg" alt="利きどん兵衛 東 きつねうどん" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.336</p>
+        <h3 class="product-name">利きどん兵衛 東 きつねうどん</h3>
+        <p class="product-price">160円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4932816715679.jpg" alt="北海大和 鮭ごま ふりかけ" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.337</p>
+        <h3 class="product-name">北海大和 鮭ごま ふりかけ</h3>
+        <p class="product-price">250円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4932816711794.jpg" alt="北海道 知床鶏だし 茶漬け" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.338</p>
+        <h3 class="product-name">北海道 知床鶏だし 茶漬け</h3>
+        <p class="product-price">250円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4932816711787.jpg" alt="北海道 秋鮭・明太子 茶漬け" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.339</p>
+        <h3 class="product-name">北海道 秋鮭・明太子 茶漬け</h3>
+        <p class="product-price">250円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4904511004693.jpg" alt="大黒 ねぎ塩とんこつラーメン 大盛り" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.348</p>
+        <h3 class="product-name">大黒 ねぎ塩とんこつラーメン 大盛り</h3>
+        <p class="product-price">160円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4901791006171.jpg" alt="小豆島産 しそのり" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.352</p>
+        <h3 class="product-name">小豆島産 しそのり</h3>
+        <p class="product-price">200円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4901791005921.jpg" alt="小豆島産 のり佃煮" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.353</p>
+        <h3 class="product-name">小豆島産 のり佃煮</h3>
+        <p class="product-price">200円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4902105252499.jpg" alt="日清 あっさりおいしい カップヌードル カレー" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.357</p>
+        <h3 class="product-name">日清 あっさりおいしい カップヌードル カレー</h3>
+        <p class="product-price">150円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4902105252505.jpg" alt="日清 あっさりおいしい カップヌードル シーフード" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.358</p>
+        <h3 class="product-name">日清 あっさりおいしい カップヌードル シーフード</h3>
+        <p class="product-price">150円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4902110369106.jpg" alt="日清 お好み焼き粉 500g" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.359</p>
+        <h3 class="product-name">日清 お好み焼き粉 500g</h3>
+        <p class="product-price">350円</p>
+      </div>
+    </div>
+  
+                  </div>
+                  <div class="pagination"><button onclick="window.location.href='___2.html'">前へ</button><span>ページ 3 / 4</span><button onclick="window.location.href='___4.html'">次へ</button></div>
+                  
+          <div class="footer">
+            <p>ご注文は電話または公式LINEで承っております。</p>
+            <p>電話番号: 092-938-3263</p>
+            <p>公式LINE: <a href="https://line.me/R/ti/p/@582qjzyq" target="_blank">LINEトーク画面へ</a></p>
+            <p>店舗情報: 福岡県糟屋郡粕屋町甲仲原1丁目19-31</p>
+            <p><iframe src="https://maps.app.goo.gl/MpDFRGJSuArttVs26" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+            <p>&copy; 2025 ConohanaSHOP. All Rights Reserved.</p>
+          </div>
+        
+              </div>
+          </body>
+          </html>
+        

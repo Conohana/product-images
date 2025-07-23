@@ -1,0 +1,214 @@
+
+          <!DOCTYPE html>
+          <html lang="ja">
+          <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>食品 > お菓子 商品一覧 (ページ 5/5)</title>
+              
+    <style>
+      body { font-family: 'メイリオ', Meiryo, sans-serif; margin: 0; padding: 20px; background-color: #f4f7f6; color: #333; }
+      .container { max-width: 1200px; margin: 0 auto; padding: 20px; background-color: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+      h1, h2 { text-align: center; color: #2c3e50; margin-bottom: 30px; }
+      h1 { font-size: 2.5em; border-bottom: 2px solid #e0e0e0; padding-bottom: 15px; }
+      h2 { font-size: 1.8em; color: #34495e; }
+      .product-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 1列200px以上で自動調整 */
+        gap: 25px;
+        justify-content: center;
+        padding: 20px 0;
+      }
+      .product-item {
+        background-color: #fff;
+        border: 1px solid #e0e0e0;
+        border-radius: 10px;
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        transition: transform 0.2s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between; /* コンテンツを均等に配置 */
+      }
+      .product-item:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      }
+      .product-image {
+        max-width: 100%;
+        height: 180px; /* 画像の高さを固定 */
+        object-fit: contain; /* アスペクト比を保ちつつ、指定された領域に収める */
+        border-radius: 6px;
+        margin-bottom: 10px;
+        background-color: #f0f0f0; /* ロード中の背景色 */
+      }
+      .product-details {
+        flex-grow: 1; /* 残りのスペースを埋める */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end; /* 下部に寄せる */
+        width: 100%;
+        padding-top: 10px;
+      }
+      .product-catalog-number {
+        font-size: 0.85em;
+        color: #7f8c8d;
+        margin-bottom: 5px;
+      }
+      .product-name {
+        font-size: 1.2em;
+        color: #2c3e50;
+        font-weight: bold;
+        margin-bottom: 10px;
+        line-height: 1.4;
+      }
+      .product-price {
+        font-size: 1.4em;
+        color: #e74c3c; /* 赤系の価格表示 */
+        font-weight: bold;
+        margin-top: auto; /* 価格を一番下に配置 */
+      }
+      .pagination {
+        text-align: center;
+        margin-top: 30px;
+      }
+      .pagination button {
+        background-color: #3498db;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        margin: 0 5px;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1em;
+      }
+      .pagination button:hover:not(:disabled) {
+        background-color: #2980b9;
+      }
+      .pagination button:disabled {
+        background-color: #cccccc;
+        cursor: not-allowed;
+      }
+      .footer {
+        text-align: center;
+        margin-top: 50px;
+        padding-top: 20px;
+        border-top: 1px solid #e0e0e0;
+        color: #7f8c8d;
+        font-size: 0.9em;
+      }
+      .footer a {
+        color: #3498db;
+        text-decoration: none;
+      }
+      .footer a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  
+          </head>
+          <body>
+              <div class="container">
+                  <h1>食品</h1>
+                  <h2>お菓子</h2>
+                  <div class="product-grid">
+                      
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4903013246464.jpg" alt="ロールキャンディ 青リンゴ味" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.327</p>
+        <h3 class="product-name">ロールキャンディ 青リンゴ味</h3>
+        <p class="product-price">100円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4544715334655.jpg" alt="大粒 むき甘栗 60g×5袋" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.347</p>
+        <h3 class="product-name">大粒 むき甘栗 60g×5袋</h3>
+        <p class="product-price">500円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4524729981021.jpg" alt="天津 むき甘栗 R" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.349</p>
+        <h3 class="product-name">天津 むき甘栗 R</h3>
+        <p class="product-price">130円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4902750764323.jpg" alt="忍者めし 鋼 グレープ味" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.354</p>
+        <h3 class="product-name">忍者めし 鋼 グレープ味</h3>
+        <p class="product-price">120円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4902750725942.jpg" alt="忍者めし 鋼 コーラ味" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.355</p>
+        <h3 class="product-name">忍者めし 鋼 コーラ味</h3>
+        <p class="product-price">120円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4902750784635.jpg" alt="忍者めし 鋼 マスカット味" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.356</p>
+        <h3 class="product-name">忍者めし 鋼 マスカット味</h3>
+        <p class="product-price">120円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4902777139746.jpg" alt="果汁グミ ぶどう" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.364</p>
+        <h3 class="product-name">果汁グミ ぶどう</h3>
+        <p class="product-price">120円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4902777140070.jpg" alt="果汁グミ マスカット" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.365</p>
+        <h3 class="product-name">果汁グミ マスカット</h3>
+        <p class="product-price">120円</p>
+      </div>
+    </div>
+  
+    <div class="product-item">
+      <img src="https://conohana.github.io/product-images/4902777132129.jpg" alt="果汁グミ 温州みかん" class="product-image">
+      <div class="product-details">
+        <p class="product-catalog-number">No.366</p>
+        <h3 class="product-name">果汁グミ 温州みかん</h3>
+        <p class="product-price">120円</p>
+      </div>
+    </div>
+  
+                  </div>
+                  <div class="pagination"><button onclick="window.location.href='____4.html'">前へ</button><span>ページ 5 / 5</span><button disabled>次へ</button></div>
+                  
+          <div class="footer">
+            <p>ご注文は電話または公式LINEで承っております。</p>
+            <p>電話番号: 092-938-3263</p>
+            <p>公式LINE: <a href="https://line.me/R/ti/p/@582qjzyq" target="_blank">LINEトーク画面へ</a></p>
+            <p>店舗情報: 福岡県糟屋郡粕屋町甲仲原1丁目19-31</p>
+            <p><iframe src="https://maps.app.goo.gl/MpDFRGJSuArttVs26" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+            <p>&copy; 2025 ConohanaSHOP. All Rights Reserved.</p>
+          </div>
+        
+              </div>
+          </body>
+          </html>
+        
