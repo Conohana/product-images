@@ -14,7 +14,7 @@
       h2 { font-size: 1.8em; color: #34495e; }
       .product-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 1列200px以上で自動調整 */
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 25px;
         justify-content: center;
         padding: 20px 0;
@@ -30,7 +30,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between; /* コンテンツを均等に配置 */
+        justify-content: space-between;
       }
       .product-item:hover {
         transform: translateY(-5px);
@@ -38,24 +38,26 @@
       }
       .product-image {
         max-width: 100%;
-        height: 180px; /* 画像の高さを固定 */
-        object-fit: contain; /* アスペクト比を保ちつつ、指定された領域に収める */
+        height: 180px;
+        object-fit: contain;
         border-radius: 6px;
         margin-bottom: 10px;
-        background-color: #f0f0f0; /* ロード中の背景色 */
+        background-color: #f0f0f0;
       }
       .product-details {
-        flex-grow: 1; /* 残りのスペースを埋める */
+        flex-grow: 1;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end; /* 下部に寄せる */
+        justify-content: flex-end;
         width: 100%;
         padding-top: 10px;
       }
       .product-catalog-number {
-        font-size: 0.85em;
-        color: #7f8c8d;
+        font-size: 1.2em;
+        color: #007bff;
+        font-weight: bold;
         margin-bottom: 5px;
+        text-align: center;
       }
       .product-name {
         font-size: 1.2em;
@@ -66,9 +68,9 @@
       }
       .product-price {
         font-size: 1.4em;
-        color: #e74c3c; /* 赤系の価格表示 */
+        color: #e74c3c;
         font-weight: bold;
-        margin-top: auto; /* 価格を一番下に配置 */
+        margin-top: auto;
       }
       .pagination {
         text-align: center;
@@ -106,11 +108,36 @@
       .footer a:hover {
         text-decoration: underline;
       }
+      .navigation-links {
+        margin-bottom: 30px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #e0e0e0;
+      }
+      .back-link {
+        display: inline-block;
+        background-color: #f8f9fa;
+        color: #007bff;
+        padding: 8px 15px;
+        border: 1px solid #007bff;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 0.9em;
+        transition: background-color 0.2s, color 0.2s;
+      }
+      .back-link:hover {
+        background-color: #007bff;
+        color: white;
+      }
     </style>
   
           </head>
           <body>
               <div class="container">
+                  <div class="navigation-links" style="text-align: center; margin-bottom: 20px;">
+                      <a href="https://sites.google.com/view/conohana-web/" class="back-link">トップページへ戻る</a>
+                      <span style="margin: 0 10px;">|</span>
+                      <a href="https://sites.google.com/view/conohana-web/食品" class="back-link">食品カテゴリ一覧へ戻る</a>
+                  </div>
                   <h1>食品</h1>
                   <h2>おつまみ</h2>
                   <div class="product-grid">
@@ -118,7 +145,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4935550473218.jpg" alt="IMAZU 味自慢 やきとり たれ味D 70g" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.13</p>
+        <p class="product-catalog-number">No.13</p> // ここは変更なし
         <h3 class="product-name">IMAZU 味自慢 やきとり たれ味D 70g</h3>
         <p class="product-price">200円</p>
       </div>
@@ -127,7 +154,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4935550473249.jpg" alt="IMAZU 味自慢 やきとり 塩味D 70g" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.14</p>
+        <p class="product-catalog-number">No.14</p> // ここは変更なし
         <h3 class="product-name">IMAZU 味自慢 やきとり 塩味D 70g</h3>
         <p class="product-price">200円</p>
       </div>
@@ -136,7 +163,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4901133146947.jpg" alt="いなば とりレバー 塩味 缶詰D" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.28</p>
+        <p class="product-catalog-number">No.28</p> // ここは変更なし
         <h3 class="product-name">いなば とりレバー 塩味 缶詰D</h3>
         <p class="product-price">200円</p>
       </div>
@@ -145,7 +172,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4901802015598.jpg" alt="かにみそ 缶詰" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.40</p>
+        <p class="product-catalog-number">No.40</p> // ここは変更なし
         <h3 class="product-name">かにみそ 缶詰</h3>
         <p class="product-price">500円</p>
       </div>
@@ -154,7 +181,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4902181100967.jpg" alt="なとり ソースカツ 3枚入" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.55</p>
+        <p class="product-catalog-number">No.55</p> // ここは変更なし
         <h3 class="product-name">なとり ソースカツ 3枚入</h3>
         <p class="product-price">150円</p>
       </div>
@@ -163,7 +190,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4972642220039.jpg" alt="いかの姿フライ 5枚入 プレーン" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.79</p>
+        <p class="product-catalog-number">No.79</p> // ここは変更なし
         <h3 class="product-name">いかの姿フライ 5枚入 プレーン</h3>
         <p class="product-price">110円</p>
       </div>
@@ -172,7 +199,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4901626058412.jpg" alt="チーズアーモンド" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.188</p>
+        <p class="product-catalog-number">No.188</p> // ここは変更なし
         <h3 class="product-name">チーズアーモンド</h3>
         <p class="product-price">130円</p>
       </div>
@@ -181,7 +208,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4901313205167.jpg" alt="亀田の 柿の種 6袋入" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.331</p>
+        <p class="product-catalog-number">No.331</p> // ここは変更なし
         <h3 class="product-name">亀田の 柿の種 6袋入</h3>
         <p class="product-price">300円</p>
       </div>
@@ -190,7 +217,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4901901000495.jpg" alt="本まぐろ もつ煮 70g" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.362</p>
+        <p class="product-catalog-number">No.362</p> // ここは変更なし
         <h3 class="product-name">本まぐろ もつ煮 70g</h3>
         <p class="product-price">250円</p>
       </div>
@@ -199,7 +226,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4901325403353.jpg" alt="燻製 ミックスナッツ スモーキーグリル&ペッパー" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.381</p>
+        <p class="product-catalog-number">No.381</p> // ここは変更なし
         <h3 class="product-name">燻製 ミックスナッツ スモーキーグリル&ペッパー</h3>
         <p class="product-price">150円</p>
       </div>
@@ -211,10 +238,10 @@
           <div class="footer">
             <p>ご注文は電話または公式LINEで承っております。</p>
             <p>電話番号: 092-938-3263</p>
-            <p>公式LINE: <a href="https://line.me/R/ti/p/@582qjzyq" target="_blank">LINEトーク画面へ</a></p>
+            <p>公式LINE: <a href="https://lin.ee/b5kuASY" target="_blank">LINEトーク画面へ</a></p>
             <p>店舗情報: 福岡県糟屋郡粕屋町甲仲原1丁目19-31</p>
-            <p><iframe src="https://maps.app.goo.gl/MpDFRGJSuArttVs26" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
-            <p>&copy; 2025 ConohanaSHOP. All Rights Reserved.</p>
+            <p><iframe src="https://maps.app.goo.gl/Mdaz5NTsvJMVgdfv9" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+            <p>© 2025 ConohanaSHOP. All Rights Reserved.</p>
           </div>
         
               </div>

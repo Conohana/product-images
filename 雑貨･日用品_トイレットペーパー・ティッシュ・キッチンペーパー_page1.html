@@ -14,7 +14,7 @@
       h2 { font-size: 1.8em; color: #34495e; }
       .product-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 1列200px以上で自動調整 */
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 25px;
         justify-content: center;
         padding: 20px 0;
@@ -30,7 +30,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between; /* コンテンツを均等に配置 */
+        justify-content: space-between;
       }
       .product-item:hover {
         transform: translateY(-5px);
@@ -38,24 +38,26 @@
       }
       .product-image {
         max-width: 100%;
-        height: 180px; /* 画像の高さを固定 */
-        object-fit: contain; /* アスペクト比を保ちつつ、指定された領域に収める */
+        height: 180px;
+        object-fit: contain;
         border-radius: 6px;
         margin-bottom: 10px;
-        background-color: #f0f0f0; /* ロード中の背景色 */
+        background-color: #f0f0f0;
       }
       .product-details {
-        flex-grow: 1; /* 残りのスペースを埋める */
+        flex-grow: 1;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end; /* 下部に寄せる */
+        justify-content: flex-end;
         width: 100%;
         padding-top: 10px;
       }
       .product-catalog-number {
-        font-size: 0.85em;
-        color: #7f8c8d;
+        font-size: 1.2em;
+        color: #007bff;
+        font-weight: bold;
         margin-bottom: 5px;
+        text-align: center;
       }
       .product-name {
         font-size: 1.2em;
@@ -66,9 +68,9 @@
       }
       .product-price {
         font-size: 1.4em;
-        color: #e74c3c; /* 赤系の価格表示 */
+        color: #e74c3c;
         font-weight: bold;
-        margin-top: auto; /* 価格を一番下に配置 */
+        margin-top: auto;
       }
       .pagination {
         text-align: center;
@@ -106,11 +108,36 @@
       .footer a:hover {
         text-decoration: underline;
       }
+      .navigation-links {
+        margin-bottom: 30px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #e0e0e0;
+      }
+      .back-link {
+        display: inline-block;
+        background-color: #f8f9fa;
+        color: #007bff;
+        padding: 8px 15px;
+        border: 1px solid #007bff;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 0.9em;
+        transition: background-color 0.2s, color 0.2s;
+      }
+      .back-link:hover {
+        background-color: #007bff;
+        color: white;
+      }
     </style>
   
           </head>
           <body>
               <div class="container">
+                  <div class="navigation-links" style="text-align: center; margin-bottom: 20px;">
+                      <a href="https://sites.google.com/view/conohana-web/" class="back-link">トップページへ戻る</a>
+                      <span style="margin: 0 10px;">|</span>
+                      <a href="https://sites.google.com/view/conohana-web/雑貨･日用品" class="back-link">雑貨･日用品カテゴリ一覧へ戻る</a>
+                  </div>
                   <h1>雑貨･日用品</h1>
                   <h2>トイレットペーパー・ティッシュ・キッチンペーパー</h2>
                   <div class="product-grid">
@@ -118,7 +145,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4970570823896.jpg" alt="BOXティッシュ 5箱 イットコ" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.4</p>
+        <p class="product-catalog-number">No.4</p> // ここは変更なし
         <h3 class="product-name">BOXティッシュ 5箱 イットコ</h3>
         <p class="product-price">350円</p>
       </div>
@@ -127,7 +154,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4580287281720.jpg" alt="BOXティッシュ Hello" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.5</p>
+        <p class="product-catalog-number">No.5</p> // ここは変更なし
         <h3 class="product-name">BOXティッシュ Hello</h3>
         <p class="product-price">350円</p>
       </div>
@@ -136,7 +163,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4971633300675.jpg" alt="BOXティッシュ エルモア セラピティッシュ 5箱" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.6</p>
+        <p class="product-catalog-number">No.6</p> // ここは変更なし
         <h3 class="product-name">BOXティッシュ エルモア セラピティッシュ 5箱</h3>
         <p class="product-price">350円</p>
       </div>
@@ -145,7 +172,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4901121182889.jpg" alt="BOXティッシュ ネピネピ 5箱" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.7</p>
+        <p class="product-catalog-number">No.7</p> // ここは変更なし
         <h3 class="product-name">BOXティッシュ ネピネピ 5箱</h3>
         <p class="product-price">350円</p>
       </div>
@@ -154,7 +181,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4939027003434.jpg" alt="BOXティッシュ パステルカラー 5箱" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.8</p>
+        <p class="product-catalog-number">No.8</p> // ここは変更なし
         <h3 class="product-name">BOXティッシュ パステルカラー 5箱</h3>
         <p class="product-price">350円</p>
       </div>
@@ -163,7 +190,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4976678000955.jpg" alt="OHANAソフトパックティッシュ 150W5P" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.17</p>
+        <p class="product-catalog-number">No.17</p> // ここは変更なし
         <h3 class="product-name">OHANAソフトパックティッシュ 150W5P</h3>
         <p class="product-price">330円</p>
       </div>
@@ -172,7 +199,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4970207123528.jpg" alt="キッチンタオル" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.104</p>
+        <p class="product-catalog-number">No.104</p> // ここは変更なし
         <h3 class="product-name">キッチンタオル</h3>
         <p class="product-price">250円</p>
       </div>
@@ -181,7 +208,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4901750353544.jpg" alt="スコッティ ファイン 洗って使えるペーパータオオル 70カット 1ロール" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.167</p>
+        <p class="product-catalog-number">No.167</p> // ここは変更なし
         <h3 class="product-name">スコッティ ファイン 洗って使えるペーパータオオル 70カット 1ロール</h3>
         <p class="product-price">410円</p>
       </div>
@@ -190,7 +217,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4903105320096.jpg" alt="ソフトパックティッシュ MOTTAINAI 5パック" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.178</p>
+        <p class="product-catalog-number">No.178</p> // ここは変更なし
         <h3 class="product-name">ソフトパックティッシュ MOTTAINAI 5パック</h3>
         <p class="product-price">330円</p>
       </div>
@@ -199,7 +226,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4580287279093.jpg" alt="ソフトパックティッシュ MK 5個パック" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.179</p>
+        <p class="product-catalog-number">No.179</p> // ここは変更なし
         <h3 class="product-name">ソフトパックティッシュ MK 5個パック</h3>
         <p class="product-price">330円</p>
       </div>
@@ -208,7 +235,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4971633300859.jpg" alt="ソフトパックティッシュ セラピ 5個パック" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.180</p>
+        <p class="product-catalog-number">No.180</p> // ここは変更なし
         <h3 class="product-name">ソフトパックティッシュ セラピ 5個パック</h3>
         <p class="product-price">330円</p>
       </div>
@@ -217,7 +244,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4972002106126.jpg" alt="トイレットペーパー 2倍巻き 6ロール 香りマルシェ" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.196</p>
+        <p class="product-catalog-number">No.196</p> // ここは変更なし
         <h3 class="product-name">トイレットペーパー 2倍巻き 6ロール 香りマルシェ</h3>
         <p class="product-price">450円</p>
       </div>
@@ -226,7 +253,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4972002106041.jpg" alt="トイレットペーパー 2倍巻き 6ロール 白" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.197</p>
+        <p class="product-catalog-number">No.197</p> // ここは変更なし
         <h3 class="product-name">トイレットペーパー 2倍巻き 6ロール 白</h3>
         <p class="product-price">400円</p>
       </div>
@@ -235,7 +262,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4902144822233.jpg" alt="トイレットペーパー hanauta ダブル 12ロール つぼみの香り" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.198</p>
+        <p class="product-catalog-number">No.198</p> // ここは変更なし
         <h3 class="product-name">トイレットペーパー hanauta ダブル 12ロール つぼみの香り</h3>
         <p class="product-price">500円</p>
       </div>
@@ -244,7 +271,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4902144811220.jpg" alt="トイレットペーパー hanauta ダブル 12ロール さくらの香り" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.199</p>
+        <p class="product-catalog-number">No.199</p> // ここは変更なし
         <h3 class="product-name">トイレットペーパー hanauta ダブル 12ロール さくらの香り</h3>
         <p class="product-price">500円</p>
       </div>
@@ -253,7 +280,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4902144801221.jpg" alt="トイレットペーパー hanauta ダブル 12ロール ミストの香り" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.200</p>
+        <p class="product-catalog-number">No.200</p> // ここは変更なし
         <h3 class="product-name">トイレットペーパー hanauta ダブル 12ロール ミストの香り</h3>
         <p class="product-price">500円</p>
       </div>
@@ -262,7 +289,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4977523012772.jpg" alt="トイレットペーパー なでしこ 12ロール ピンク ダブル" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.201</p>
+        <p class="product-catalog-number">No.201</p> // ここは変更なし
         <h3 class="product-name">トイレットペーパー なでしこ 12ロール ピンク ダブル</h3>
         <p class="product-price">350円</p>
       </div>
@@ -271,7 +298,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4902011106886.jpg" alt="トイレットペーパー エルフォーレ 12ロール シングル" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.202</p>
+        <p class="product-catalog-number">No.202</p> // ここは変更なし
         <h3 class="product-name">トイレットペーパー エルフォーレ 12ロール シングル</h3>
         <p class="product-price">490円</p>
       </div>
@@ -280,7 +307,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4902011106893.jpg" alt="トイレットペーパー エルフォーレ 12ロール ダブル" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.203</p>
+        <p class="product-catalog-number">No.203</p> // ここは変更なし
         <h3 class="product-name">トイレットペーパー エルフォーレ 12ロール ダブル</h3>
         <p class="product-price">490円</p>
       </div>
@@ -289,22 +316,22 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4901750251079.jpg" alt="トイレットペーパー システィ 4ロール D 無香料 リラックスブルー" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.204</p>
+        <p class="product-catalog-number">No.204</p> // ここは変更なし
         <h3 class="product-name">トイレットペーパー システィ 4ロール D 無香料 リラックスブルー</h3>
         <p class="product-price">400円</p>
       </div>
     </div>
   
                   </div>
-                  <div class="pagination"><button disabled>前へ</button><span>ページ 1 / 2</span><button onclick="window.location.href='_________________________2.html'">次へ</button></div>
+                  <div class="pagination"><button disabled>前へ</button><span>ページ 1 / 2</span><button onclick="window.location.href='雑貨･日用品_トイレットペーパー・ティッシュ・キッチンペーパー_page2.html'">次へ</button></div>
                   
           <div class="footer">
             <p>ご注文は電話または公式LINEで承っております。</p>
             <p>電話番号: 092-938-3263</p>
-            <p>公式LINE: <a href="https://line.me/R/ti/p/@582qjzyq" target="_blank">LINEトーク画面へ</a></p>
+            <p>公式LINE: <a href="https://lin.ee/b5kuASY" target="_blank">LINEトーク画面へ</a></p>
             <p>店舗情報: 福岡県糟屋郡粕屋町甲仲原1丁目19-31</p>
-            <p><iframe src="https://maps.app.goo.gl/MpDFRGJSuArttVs26" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
-            <p>&copy; 2025 ConohanaSHOP. All Rights Reserved.</p>
+            <p><iframe src="https://maps.app.goo.gl/Mdaz5NTsvJMVgdfv9" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+            <p>© 2025 ConohanaSHOP. All Rights Reserved.</p>
           </div>
         
               </div>

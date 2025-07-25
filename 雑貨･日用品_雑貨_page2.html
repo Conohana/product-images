@@ -14,7 +14,7 @@
       h2 { font-size: 1.8em; color: #34495e; }
       .product-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 1列200px以上で自動調整 */
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 25px;
         justify-content: center;
         padding: 20px 0;
@@ -30,7 +30,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between; /* コンテンツを均等に配置 */
+        justify-content: space-between;
       }
       .product-item:hover {
         transform: translateY(-5px);
@@ -38,24 +38,26 @@
       }
       .product-image {
         max-width: 100%;
-        height: 180px; /* 画像の高さを固定 */
-        object-fit: contain; /* アスペクト比を保ちつつ、指定された領域に収める */
+        height: 180px;
+        object-fit: contain;
         border-radius: 6px;
         margin-bottom: 10px;
-        background-color: #f0f0f0; /* ロード中の背景色 */
+        background-color: #f0f0f0;
       }
       .product-details {
-        flex-grow: 1; /* 残りのスペースを埋める */
+        flex-grow: 1;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end; /* 下部に寄せる */
+        justify-content: flex-end;
         width: 100%;
         padding-top: 10px;
       }
       .product-catalog-number {
-        font-size: 0.85em;
-        color: #7f8c8d;
+        font-size: 1.2em;
+        color: #007bff;
+        font-weight: bold;
         margin-bottom: 5px;
+        text-align: center;
       }
       .product-name {
         font-size: 1.2em;
@@ -66,9 +68,9 @@
       }
       .product-price {
         font-size: 1.4em;
-        color: #e74c3c; /* 赤系の価格表示 */
+        color: #e74c3c;
         font-weight: bold;
-        margin-top: auto; /* 価格を一番下に配置 */
+        margin-top: auto;
       }
       .pagination {
         text-align: center;
@@ -106,11 +108,36 @@
       .footer a:hover {
         text-decoration: underline;
       }
+      .navigation-links {
+        margin-bottom: 30px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #e0e0e0;
+      }
+      .back-link {
+        display: inline-block;
+        background-color: #f8f9fa;
+        color: #007bff;
+        padding: 8px 15px;
+        border: 1px solid #007bff;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 0.9em;
+        transition: background-color 0.2s, color 0.2s;
+      }
+      .back-link:hover {
+        background-color: #007bff;
+        color: white;
+      }
     </style>
   
           </head>
           <body>
               <div class="container">
+                  <div class="navigation-links" style="text-align: center; margin-bottom: 20px;">
+                      <a href="https://sites.google.com/view/conohana-web/" class="back-link">トップページへ戻る</a>
+                      <span style="margin: 0 10px;">|</span>
+                      <a href="https://sites.google.com/view/conohana-web/雑貨･日用品" class="back-link">雑貨･日用品カテゴリ一覧へ戻る</a>
+                  </div>
                   <h1>雑貨･日用品</h1>
                   <h2>雑貨</h2>
                   <div class="product-grid">
@@ -118,7 +145,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4562224314623.jpg" alt="スポンジ 5個入 ハード" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.173</p>
+        <p class="product-catalog-number">No.173</p> // ここは変更なし
         <h3 class="product-name">スポンジ 5個入 ハード</h3>
         <p class="product-price">100円</p>
       </div>
@@ -127,7 +154,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4549777614936.jpg" alt="ソフトクーラーバッグ 15L" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.175</p>
+        <p class="product-catalog-number">No.175</p> // ここは変更なし
         <h3 class="product-name">ソフトクーラーバッグ 15L</h3>
         <p class="product-price">1500円</p>
       </div>
@@ -136,7 +163,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4549777614943.jpg" alt="ソフトクーラーバッグ 25L" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.176</p>
+        <p class="product-catalog-number">No.176</p> // ここは変更なし
         <h3 class="product-name">ソフトクーラーバッグ 25L</h3>
         <p class="product-price">2000円</p>
       </div>
@@ -145,7 +172,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/2400037652766.jpg" alt="ソフトグライダー" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.177</p>
+        <p class="product-catalog-number">No.177</p> // ここは変更なし
         <h3 class="product-name">ソフトグライダー</h3>
         <p class="product-price">250円</p>
       </div>
@@ -154,7 +181,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4901422360160.jpg" alt="ダストマン 水切りネット 20枚 三角コーナー用" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.182</p>
+        <p class="product-catalog-number">No.182</p> // ここは変更なし
         <h3 class="product-name">ダストマン 水切りネット 20枚 三角コーナー用</h3>
         <p class="product-price">100円</p>
       </div>
@@ -163,7 +190,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4901422360153.jpg" alt="ダストマン 水切りネット 20枚 排水口用" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.183</p>
+        <p class="product-catalog-number">No.183</p> // ここは変更なし
         <h3 class="product-name">ダストマン 水切りネット 20枚 排水口用</h3>
         <p class="product-price">100円</p>
       </div>
@@ -172,7 +199,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4549138190949.jpg" alt="着圧ソックス (日中用) ブラック" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.185</p>
+        <p class="product-catalog-number">No.185</p> // ここは変更なし
         <h3 class="product-name">着圧ソックス (日中用) ブラック</h3>
         <p class="product-price">300円</p>
       </div>
@@ -181,7 +208,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4549138191632.jpg" alt="着圧ソックス (おやすみ用) (ピンク)" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.186</p>
+        <p class="product-catalog-number">No.186</p> // ここは変更なし
         <h3 class="product-name">着圧ソックス (おやすみ用) (ピンク)</h3>
         <p class="product-price">300円</p>
       </div>
@@ -190,7 +217,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4549138196637.jpg" alt="着圧ソックス (おやすみ用) (ミント)涼感タイプ" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.187</p>
+        <p class="product-catalog-number">No.187</p> // ここは変更なし
         <h3 class="product-name">着圧ソックス (おやすみ用) (ミント)涼感タイプ</h3>
         <p class="product-price">400円</p>
       </div>
@@ -199,7 +226,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4974550484619.jpg" alt="東芝LED電球 100形" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.211</p>
+        <p class="product-catalog-number">No.211</p> // ここは変更なし
         <h3 class="product-name">東芝LED電球 100形</h3>
         <p class="product-price">2000円</p>
       </div>
@@ -208,7 +235,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4975974030499.jpg" alt="中山式 肘・膝・ふくらはぎサポーター フリーサイズ ブラック" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.220</p>
+        <p class="product-catalog-number">No.220</p> // ここは変更なし
         <h3 class="product-name">中山式 肘・膝・ふくらはぎサポーター フリーサイズ ブラック</h3>
         <p class="product-price">1000円</p>
       </div>
@@ -217,7 +244,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4539808832019.jpg" alt="ネットスポンジ 5個入" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.225</p>
+        <p class="product-catalog-number">No.225</p> // ここは変更なし
         <h3 class="product-name">ネットスポンジ 5個入</h3>
         <p class="product-price">110円</p>
       </div>
@@ -226,7 +253,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4967213157647.jpg" alt="バスタオル 2枚組" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.238</p>
+        <p class="product-catalog-number">No.238</p> // ここは変更なし
         <h3 class="product-name">バスタオル 2枚組</h3>
         <p class="product-price">800円</p>
       </div>
@@ -235,7 +262,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4582400833359.jpg" alt="馬油ボディソープ クール 600ml" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.240</p>
+        <p class="product-catalog-number">No.240</p> // ここは変更なし
         <h3 class="product-name">馬油ボディソープ クール 600ml</h3>
         <p class="product-price">600円</p>
       </div>
@@ -244,7 +271,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4902430737630.jpg" alt="パンテーン トリートメントミルク" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.242</p>
+        <p class="product-catalog-number">No.242</p> // ここは変更なし
         <h3 class="product-name">パンテーン トリートメントミルク</h3>
         <p class="product-price">800円</p>
       </div>
@@ -253,7 +280,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4976790414159.jpg" alt="パール金属 ステンレス 三徳包丁" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.243</p>
+        <p class="product-catalog-number">No.243</p> // ここは変更なし
         <h3 class="product-name">パール金属 ステンレス 三徳包丁</h3>
         <p class="product-price">800円</p>
       </div>
@@ -262,7 +289,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/2404170001061.jpg" alt="ビニール傘" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.245</p>
+        <p class="product-catalog-number">No.245</p> // ここは変更なし
         <h3 class="product-name">ビニール傘</h3>
         <p class="product-price">100円</p>
       </div>
@@ -271,7 +298,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4904510882223.jpg" alt="ビニール手袋 M ピンク" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.246</p>
+        <p class="product-catalog-number">No.246</p> // ここは変更なし
         <h3 class="product-name">ビニール手袋 M ピンク</h3>
         <p class="product-price">100円</p>
       </div>
@@ -280,7 +307,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4901080572318.jpg" alt="ピレパラアース 防虫剤 シルキーアロマの香り 引き出し・衣装ケース用 48包入" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.248</p>
+        <p class="product-catalog-number">No.248</p> // ここは変更なし
         <h3 class="product-name">ピレパラアース 防虫剤 シルキーアロマの香り 引き出し・衣装ケース用 48包入</h3>
         <p class="product-price">550円</p>
       </div>
@@ -289,22 +316,22 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4901080576712.jpg" alt="ピレパラアース 防虫剤 ハッピースイートフラワーの香り 引き出し用 48包入 SNOOPYデザイン" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.249</p>
+        <p class="product-catalog-number">No.249</p> // ここは変更なし
         <h3 class="product-name">ピレパラアース 防虫剤 ハッピースイートフラワーの香り 引き出し用 48包入 SNOOPYデザイン</h3>
         <p class="product-price">550円</p>
       </div>
     </div>
   
                   </div>
-                  <div class="pagination"><button onclick="window.location.href='___1.html'">前へ</button><span>ページ 2 / 4</span><button onclick="window.location.href='___3.html'">次へ</button></div>
+                  <div class="pagination"><button onclick="window.location.href='雑貨･日用品_雑貨_page1.html'">前へ</button><span>ページ 2 / 4</span><button onclick="window.location.href='雑貨･日用品_雑貨_page3.html'">次へ</button></div>
                   
           <div class="footer">
             <p>ご注文は電話または公式LINEで承っております。</p>
             <p>電話番号: 092-938-3263</p>
-            <p>公式LINE: <a href="https://line.me/R/ti/p/@582qjzyq" target="_blank">LINEトーク画面へ</a></p>
+            <p>公式LINE: <a href="https://lin.ee/b5kuASY" target="_blank">LINEトーク画面へ</a></p>
             <p>店舗情報: 福岡県糟屋郡粕屋町甲仲原1丁目19-31</p>
-            <p><iframe src="https://maps.app.goo.gl/MpDFRGJSuArttVs26" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
-            <p>&copy; 2025 ConohanaSHOP. All Rights Reserved.</p>
+            <p><iframe src="https://maps.app.goo.gl/Mdaz5NTsvJMVgdfv9" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+            <p>© 2025 ConohanaSHOP. All Rights Reserved.</p>
           </div>
         
               </div>

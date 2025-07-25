@@ -14,7 +14,7 @@
       h2 { font-size: 1.8em; color: #34495e; }
       .product-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 1列200px以上で自動調整 */
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 25px;
         justify-content: center;
         padding: 20px 0;
@@ -30,7 +30,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between; /* コンテンツを均等に配置 */
+        justify-content: space-between;
       }
       .product-item:hover {
         transform: translateY(-5px);
@@ -38,24 +38,26 @@
       }
       .product-image {
         max-width: 100%;
-        height: 180px; /* 画像の高さを固定 */
-        object-fit: contain; /* アスペクト比を保ちつつ、指定された領域に収める */
+        height: 180px;
+        object-fit: contain;
         border-radius: 6px;
         margin-bottom: 10px;
-        background-color: #f0f0f0; /* ロード中の背景色 */
+        background-color: #f0f0f0;
       }
       .product-details {
-        flex-grow: 1; /* 残りのスペースを埋める */
+        flex-grow: 1;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end; /* 下部に寄せる */
+        justify-content: flex-end;
         width: 100%;
         padding-top: 10px;
       }
       .product-catalog-number {
-        font-size: 0.85em;
-        color: #7f8c8d;
+        font-size: 1.2em;
+        color: #007bff;
+        font-weight: bold;
         margin-bottom: 5px;
+        text-align: center;
       }
       .product-name {
         font-size: 1.2em;
@@ -66,9 +68,9 @@
       }
       .product-price {
         font-size: 1.4em;
-        color: #e74c3c; /* 赤系の価格表示 */
+        color: #e74c3c;
         font-weight: bold;
-        margin-top: auto; /* 価格を一番下に配置 */
+        margin-top: auto;
       }
       .pagination {
         text-align: center;
@@ -106,11 +108,36 @@
       .footer a:hover {
         text-decoration: underline;
       }
+      .navigation-links {
+        margin-bottom: 30px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #e0e0e0;
+      }
+      .back-link {
+        display: inline-block;
+        background-color: #f8f9fa;
+        color: #007bff;
+        padding: 8px 15px;
+        border: 1px solid #007bff;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 0.9em;
+        transition: background-color 0.2s, color 0.2s;
+      }
+      .back-link:hover {
+        background-color: #007bff;
+        color: white;
+      }
     </style>
   
           </head>
           <body>
               <div class="container">
+                  <div class="navigation-links" style="text-align: center; margin-bottom: 20px;">
+                      <a href="https://sites.google.com/view/conohana-web/" class="back-link">トップページへ戻る</a>
+                      <span style="margin: 0 10px;">|</span>
+                      <a href="https://sites.google.com/view/conohana-web/食品" class="back-link">食品カテゴリ一覧へ戻る</a>
+                  </div>
                   <h1>食品</h1>
                   <h2>調味料</h2>
                   <div class="product-grid">
@@ -118,7 +145,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4901155137800.jpg" alt="イカリ お好みソース 300g" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.80</p>
+        <p class="product-catalog-number">No.80</p> // ここは変更なし
         <h3 class="product-name">イカリ お好みソース 300g</h3>
         <p class="product-price">140円</p>
       </div>
@@ -127,7 +154,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4901155138883.jpg" alt="イカリ 本場関西 お好みソース 500g" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.81</p>
+        <p class="product-catalog-number">No.81</p> // ここは変更なし
         <h3 class="product-name">イカリ 本場関西 お好みソース 500g</h3>
         <p class="product-price">250円</p>
       </div>
@@ -136,7 +163,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4901306097526.jpg" alt="カゴメ とんかつソース 500ml" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.87</p>
+        <p class="product-catalog-number">No.87</p> // ここは変更なし
         <h3 class="product-name">カゴメ とんかつソース 500ml</h3>
         <p class="product-price">280円</p>
       </div>
@@ -145,7 +172,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4901306097502.jpg" alt="カゴメ ウスターソース 500ml" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.88</p>
+        <p class="product-catalog-number">No.88</p> // ここは変更なし
         <h3 class="product-name">カゴメ ウスターソース 500ml</h3>
         <p class="product-price">280円</p>
       </div>
@@ -154,7 +181,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4901306010532.jpg" alt="カゴメ トマトケチャップ 500g" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.89</p>
+        <p class="product-catalog-number">No.89</p> // ここは変更なし
         <h3 class="product-name">カゴメ トマトケチャップ 500g</h3>
         <p class="product-price">280円</p>
       </div>
@@ -163,7 +190,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4901515122484.jpg" alt="キッコーマン しぼりたて 生しょうゆ 450ml" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.102</p>
+        <p class="product-catalog-number">No.102</p> // ここは変更なし
         <h3 class="product-name">キッコーマン しぼりたて 生しょうゆ 450ml</h3>
         <p class="product-price">300円</p>
       </div>
@@ -172,7 +199,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4901577042072.jpg" alt="キューピー マヨネーズ 450g" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.113</p>
+        <p class="product-catalog-number">No.113</p> // ここは変更なし
         <h3 class="product-name">キューピー マヨネーズ 450g</h3>
         <p class="product-price">300円</p>
       </div>
@@ -181,7 +208,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4902887068455.jpg" alt="テーブルランド おいしい トマトケチャップ 400g" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.189</p>
+        <p class="product-catalog-number">No.189</p> // ここは変更なし
         <h3 class="product-name">テーブルランド おいしい トマトケチャップ 400g</h3>
         <p class="product-price">250円</p>
       </div>
@@ -190,7 +217,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4902412115203.jpg" alt="フジジン うすくち 醤油 1L" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.256</p>
+        <p class="product-catalog-number">No.256</p> // ここは変更なし
         <h3 class="product-name">フジジン うすくち 醤油 1L</h3>
         <p class="product-price">250円</p>
       </div>
@@ -199,7 +226,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4903013220822.jpg" alt="ミル付き ヒマラヤ 岩塩" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.297</p>
+        <p class="product-catalog-number">No.297</p> // ここは変更なし
         <h3 class="product-name">ミル付き ヒマラヤ 岩塩</h3>
         <p class="product-price">150円</p>
       </div>
@@ -208,7 +235,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4903013220815.jpg" alt="ミル付き 岩塩" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.298</p>
+        <p class="product-catalog-number">No.298</p> // ここは変更なし
         <h3 class="product-name">ミル付き 岩塩</h3>
         <p class="product-price">150円</p>
       </div>
@@ -220,10 +247,10 @@
           <div class="footer">
             <p>ご注文は電話または公式LINEで承っております。</p>
             <p>電話番号: 092-938-3263</p>
-            <p>公式LINE: <a href="https://line.me/R/ti/p/@582qjzyq" target="_blank">LINEトーク画面へ</a></p>
+            <p>公式LINE: <a href="https://lin.ee/b5kuASY" target="_blank">LINEトーク画面へ</a></p>
             <p>店舗情報: 福岡県糟屋郡粕屋町甲仲原1丁目19-31</p>
-            <p><iframe src="https://maps.app.goo.gl/MpDFRGJSuArttVs26" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
-            <p>&copy; 2025 ConohanaSHOP. All Rights Reserved.</p>
+            <p><iframe src="https://maps.app.goo.gl/Mdaz5NTsvJMVgdfv9" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+            <p>© 2025 ConohanaSHOP. All Rights Reserved.</p>
           </div>
         
               </div>

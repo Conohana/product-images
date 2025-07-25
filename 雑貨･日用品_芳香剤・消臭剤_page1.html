@@ -14,7 +14,7 @@
       h2 { font-size: 1.8em; color: #34495e; }
       .product-grid {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* 1列200px以上で自動調整 */
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         gap: 25px;
         justify-content: center;
         padding: 20px 0;
@@ -30,7 +30,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-between; /* コンテンツを均等に配置 */
+        justify-content: space-between;
       }
       .product-item:hover {
         transform: translateY(-5px);
@@ -38,24 +38,26 @@
       }
       .product-image {
         max-width: 100%;
-        height: 180px; /* 画像の高さを固定 */
-        object-fit: contain; /* アスペクト比を保ちつつ、指定された領域に収める */
+        height: 180px;
+        object-fit: contain;
         border-radius: 6px;
         margin-bottom: 10px;
-        background-color: #f0f0f0; /* ロード中の背景色 */
+        background-color: #f0f0f0;
       }
       .product-details {
-        flex-grow: 1; /* 残りのスペースを埋める */
+        flex-grow: 1;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end; /* 下部に寄せる */
+        justify-content: flex-end;
         width: 100%;
         padding-top: 10px;
       }
       .product-catalog-number {
-        font-size: 0.85em;
-        color: #7f8c8d;
+        font-size: 1.2em;
+        color: #007bff;
+        font-weight: bold;
         margin-bottom: 5px;
+        text-align: center;
       }
       .product-name {
         font-size: 1.2em;
@@ -66,9 +68,9 @@
       }
       .product-price {
         font-size: 1.4em;
-        color: #e74c3c; /* 赤系の価格表示 */
+        color: #e74c3c;
         font-weight: bold;
-        margin-top: auto; /* 価格を一番下に配置 */
+        margin-top: auto;
       }
       .pagination {
         text-align: center;
@@ -106,11 +108,36 @@
       .footer a:hover {
         text-decoration: underline;
       }
+      .navigation-links {
+        margin-bottom: 30px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #e0e0e0;
+      }
+      .back-link {
+        display: inline-block;
+        background-color: #f8f9fa;
+        color: #007bff;
+        padding: 8px 15px;
+        border: 1px solid #007bff;
+        border-radius: 5px;
+        text-decoration: none;
+        font-size: 0.9em;
+        transition: background-color 0.2s, color 0.2s;
+      }
+      .back-link:hover {
+        background-color: #007bff;
+        color: white;
+      }
     </style>
   
           </head>
           <body>
               <div class="container">
+                  <div class="navigation-links" style="text-align: center; margin-bottom: 20px;">
+                      <a href="https://sites.google.com/view/conohana-web/" class="back-link">トップページへ戻る</a>
+                      <span style="margin: 0 10px;">|</span>
+                      <a href="https://sites.google.com/view/conohana-web/雑貨･日用品" class="back-link">雑貨･日用品カテゴリ一覧へ戻る</a>
+                  </div>
                   <h1>雑貨･日用品</h1>
                   <h2>芳香剤・消臭剤</h2>
                   <div class="product-grid">
@@ -118,7 +145,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4535304293767.jpg" alt="Dolty カップアイス型 フレグランスジェル 芳香剤 レモンシャーベットの香り" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.12</p>
+        <p class="product-catalog-number">No.12</p> // ここは変更なし
         <h3 class="product-name">Dolty カップアイス型 フレグランスジェル 芳香剤 レモンシャーベットの香り</h3>
         <p class="product-price">300円</p>
       </div>
@@ -127,7 +154,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4901070113859.jpg" alt="お部屋の消臭力 せっけんの香り" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.37</p>
+        <p class="product-catalog-number">No.37</p> // ここは変更なし
         <h3 class="product-name">お部屋の消臭力 せっけんの香り</h3>
         <p class="product-price">300円</p>
       </div>
@@ -136,7 +163,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4901070129331.jpg" alt="お部屋の消臭力 エアリーブーケ" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.38</p>
+        <p class="product-catalog-number">No.38</p> // ここは変更なし
         <h3 class="product-name">お部屋の消臭力 エアリーブーケ</h3>
         <p class="product-price">300円</p>
       </div>
@@ -145,7 +172,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4901070115044.jpg" alt="トイレの消臭力 アクアソープの香り" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.191</p>
+        <p class="product-catalog-number">No.191</p> // ここは変更なし
         <h3 class="product-name">トイレの消臭力 アクアソープの香り</h3>
         <p class="product-price">300円</p>
       </div>
@@ -154,7 +181,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4901070112296.jpg" alt="トイレの消臭力 スプレー アップルミント" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.192</p>
+        <p class="product-catalog-number">No.192</p> // ここは変更なし
         <h3 class="product-name">トイレの消臭力 スプレー アップルミント</h3>
         <p class="product-price">300円</p>
       </div>
@@ -163,7 +190,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4901070129263.jpg" alt="トイレの消臭力 スプレー エアリーブーケ" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.193</p>
+        <p class="product-catalog-number">No.193</p> // ここは変更なし
         <h3 class="product-name">トイレの消臭力 スプレー エアリーブーケ</h3>
         <p class="product-price">300円</p>
       </div>
@@ -172,7 +199,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4901070120420.jpg" alt="トイレの消臭力 スプレー ラブリーブーケ" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.194</p>
+        <p class="product-catalog-number">No.194</p> // ここは変更なし
         <h3 class="product-name">トイレの消臭力 スプレー ラブリーブーケ</h3>
         <p class="product-price">300円</p>
       </div>
@@ -181,7 +208,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4901070120406.jpg" alt="トイレの消臭力 ラブリーブーケの香り" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.195</p>
+        <p class="product-catalog-number">No.195</p> // ここは変更なし
         <h3 class="product-name">トイレの消臭力 ラブリーブーケの香り</h3>
         <p class="product-price">300円</p>
       </div>
@@ -190,7 +217,7 @@
     <div class="product-item">
       <img src="https://conohana.github.io/product-images/4901070129287.jpg" alt="トイレの消臭力 エアリーブーケ" class="product-image">
       <div class="product-details">
-        <p class="product-catalog-number">No.210</p>
+        <p class="product-catalog-number">No.210</p> // ここは変更なし
         <h3 class="product-name">トイレの消臭力 エアリーブーケ</h3>
         <p class="product-price">300円</p>
       </div>
@@ -202,10 +229,10 @@
           <div class="footer">
             <p>ご注文は電話または公式LINEで承っております。</p>
             <p>電話番号: 092-938-3263</p>
-            <p>公式LINE: <a href="https://line.me/R/ti/p/@582qjzyq" target="_blank">LINEトーク画面へ</a></p>
+            <p>公式LINE: <a href="https://lin.ee/b5kuASY" target="_blank">LINEトーク画面へ</a></p>
             <p>店舗情報: 福岡県糟屋郡粕屋町甲仲原1丁目19-31</p>
-            <p><iframe src="https://maps.app.goo.gl/MpDFRGJSuArttVs26" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
-            <p>&copy; 2025 ConohanaSHOP. All Rights Reserved.</p>
+            <p><iframe src="https://maps.app.goo.gl/Mdaz5NTsvJMVgdfv9" width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p>
+            <p>© 2025 ConohanaSHOP. All Rights Reserved.</p>
           </div>
         
               </div>
